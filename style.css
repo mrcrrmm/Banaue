@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Barabara';
+  src: url('assets/BARABARA-final.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #000;
+}
+
+h1,
+a {
+  font-family: 'Barabara', sans-serif;
+}
+
+h2,
+p, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+.fade-top,
+.fade-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+  /* So they don’t block clicks */
+}
+
+.fade-top {
+  top: 0;
+  height: 500px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), #000);
+}
+
+.fade-bottom {
+  bottom: 0;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: 300ms;
+}
